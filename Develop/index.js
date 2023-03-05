@@ -1,19 +1,22 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 const { type } = require("os");
 
 // TODO: Create an array of questions for user input
 const questions = [
   "What is the title of your project?",
-  "What is a brief description of your project?",
-  "What are the steps needed to install your project?",
+  "Can you give a brief description of your project?",
+  "The steps you need to take to install this project are...",
   "How do you use your application?",
   "What license would you like to use for your project?",
   "How would you like people to contribute to your project?",
-  "What are some ways people can test your project?",
+  "List some ways that people can test your project?",
   "What is your github username?",
   "What is your email? ",
+  "My motivation for creating this project was...",
+  "The problem I am trying to solve is...",
 ];
 
 // TODO: Create a function to write README file
@@ -22,7 +25,7 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
   inquirer
-    .prompt(
+    .prompt([
       {
         type: "input",
         name: "title",
@@ -32,6 +35,16 @@ function init() {
         type: "input",
         name: "description",
         message: questions[1],
+      },
+      {
+        type: "input",
+        name: "motivation",
+        message: questions[9],
+      },
+      {
+        type: "input",
+        name: "problem",
+        message: questions[10],
       },
       {
         type: "input",
@@ -104,10 +117,12 @@ function init() {
           "zlib",
           "No License",
         ],
-      }
-    )
+      },
+    ])
 
-    .then((answers) => {});
+    .then((answers) => {
+      console.log(answers);
+    });
 }
 
 // Function call to initialize app
