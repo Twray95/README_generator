@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown");
+const moduleLink = require("./utils/generateMarkdown");
 const { type } = require("os");
 
 // TODO: Create an array of questions for user input
@@ -122,6 +122,10 @@ function init() {
 
     .then((answers) => {
       console.log(answers);
+      let textOfMd = moduleLink.generateMarkdown(answers);
+      fs.writeFile("README.md", textOfMd, (err) =>
+        err ? console.error(err) : console.log("success")
+      );
     });
 }
 
