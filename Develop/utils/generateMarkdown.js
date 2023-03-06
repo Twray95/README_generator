@@ -31,9 +31,9 @@ function renderLicenseSection(license) {
     return ``;
   } else {
     return `## License
-    ${renderLicenseBadge(license)}
+  ${renderLicenseBadge(license)}
     
-    ${renderLicenseLink(license)}`;
+  ${renderLicenseLink(license)}`;
   }
 }
 
@@ -42,34 +42,34 @@ function generateMarkdown(data) {
   console.log("success");
   return `# ${data.title}
 
-  ## Description 
+## Description 
 
-  ${data.description}.
+${data.description}.
 
-  - My motivation for creating this project was ${data.motivation}.
-  - The problem I am trying to solve is ${data.problem}.
+- My motivation for creating this project was ${data.motivation}.
+- The problem I am trying to solve is ${data.problem}.
 
-  ## Installation
+## Installation
 
-  The steps you need to take to install this project are ${data.installation}.
+The steps you need to take to install this project are ${data.installation}.
 
-  ## Usage
+## Usage
 
-  ${data.usage}.
+${data.usage}.
 
-  ## Contribution
+## Contribution
 
-  Please follow the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
+Please follow the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
 
-  To contact me, my github is [${data.gitUsername}](https://github.com/${
+To contact me, my github is [${data.gitUsername}](https://github.com/${
     data.gitUsername
   }) and my email is ${data.email}.
 
-  ## Testing
+## Testing
 
-  If you would like to test my project, here are a few ways. ${data.tests}.
+If you would like to test my project, here are a few ways. ${data.tests}.
 
-  ${renderLicenseSection(data)}
+${renderLicenseSection(data)}
 
 `;
 }

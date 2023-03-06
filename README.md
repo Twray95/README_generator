@@ -1,32 +1,32 @@
-# q
+# s
 
-  ## Description 
+## Description 
 
-  q.
+s.
 
-  - My motivation for creating this project was q.
-  - The problem I am trying to solve is q.
+- My motivation for creating this project was s.
+- The problem I am trying to solve is s.
 
-  ## Installation
+## Installation
 
-  The steps you need to take to install this project are q.
+The steps you need to take to install this project are s.
 
-  ## Usage
+## Usage
 
-  q.
+s.
 
-  ## Contribution
+## Contribution
 
-  Please follow the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
+Please follow the [Contributor Covenant v2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md)
 
-  To contact me, my github is [q](https://github.com/q) and my email is q.
+To contact me, my github is [s](https://github.com/s) and my email is s.
 
-  ## Testing
+## Testing
 
-  If you would like to test my project, here are a few ways. q.
+If you would like to test my project, here are a few ways. s.
 
-  ## License
-    ![License](https://img.shields.io/badge/license-afl-3.0-lightgrey)
+## License
+  ![License](https://img.shields.io/badge/license-wtfpl-lightgrey)
     
-    [License Link](https://choosealicense.com/licenses/afl-3.0/)
+  [License Link](https://choosealicense.com/licenses/wtfpl/)
 
